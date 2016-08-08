@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <title>个人主页</title>
+  <meta charset="UTF-8">
+  <meta id="vp" name="viewport" content="target-densitydpi=device-dpi,width=640">
+  <meta name="apple-touch-fullscreen" content="YES" />
+  <meta name="HandheldFriendly" content="true">
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ <meta name="format-detection" content="telephone=no">
+ <link href="css/index.css" rel="stylesheet"/>			
+</head>
+<body class="index">
+
+<section class="header box center">
+	<a href="#" class="goback"></a>
+	<div class="content box start">
+		<div class="img"><img src="img/f.png" width="70" height="70"></div>
+		<p class="name">青蛙小姐么么哒</p>
+		<a href="#" class="sx">私信</a>
+	</div>
+</section>
+<section class="list">
+	<dl>
+		<dt class="clearfix">
+			<a href="#" class="name"><img src="img/c.png" width="72" height="48"> 比亚迪s7车友圈</a>
+			<a href="javascript:void(0)" class="focus">+关注</a>
+		</dt>
+		<dd class="box start">
+			<div class="img"><img src="img/f.png" width="70" height="70"></div>
+			<div class="ctn">
+				<h3>青蛙小姐么么哒</h3>
+				<p>北京</p>
+				<a href="#" class="info">
+					青蛙小姐么么哒青蛙小姐么么哒青蛙小姐么么哒
+					<ul class="imglist box start">
+						<li><img src="img/tu.jpg" width="160" height="160"></li>
+						<li><img src="img/tu.jpg" width="160" height="160"></li>
+						<li><img src="img/tu.jpg" width="160" height="160"></li>
+					</ul>
+				</a>
+				<div class="tools">
+					<span class="time">46分钟前</span>
+					<a href="javascript:void(0);" class="discuss">35</a>
+					<a href="javascript:void(0);" class="zan">12</a>
+				</div>
+			</div>
+		</dd>
+	</dl>
+	<dl>
+		<dt class="clearfix">
+			<a href="#" class="name"><img src="img/c.png" width="72" height="48"> 比亚迪s7车友圈</a>
+			<a href="javascript:void(0)" class="focus">+关注</a>
+		</dt>
+		<dd class="box start">
+			<div class="img"><img src="img/f.png" width="70" height="70"></div>
+			<div class="ctn">
+				<h3>青蛙小姐么么哒</h3>
+				<p>北京</p>
+				<a href="#" class="info">
+					青蛙小姐么么哒青蛙小姐么么哒青蛙小姐么么哒
+					青蛙小姐么么哒青蛙小姐么么哒青蛙小姐么么哒
+					青蛙小姐么么哒青蛙小姐么么
+					哒青蛙小姐么么哒青蛙小姐么么哒青蛙小姐么么哒青蛙小姐么么哒
+				</a>
+				<div class="tools">
+					<span class="time">46分钟前</span>
+					<a href="javascript:void(0);" class="discuss">35</a>
+					<a href="javascript:void(0);" class="zan">12</a>
+				</div>
+			</div>
+		</dd>
+	</dl>
+</section>
+
+<div id="cover"></div>
+ <div id="discussLayer">
+	<div class="tool">
+		<a href="javascript:;" class="cancel">取消</a>
+		<a href="javascript:;" class="send">发送</a>
+	</div>
+	<textarea id="t" class="text" placeholder="我要说两句..."></textarea>
+ </div>
+
+<script>
+
+<script>
+/*动态修改不同系统，不同版本下viewport的设置，使页面在手机端正常显示*/
+var WIDTH = 640;
+document.addEventListener( "DOMContentLoaded", function() {
+	var ua = window.navigator.userAgent.toLowerCase(),dw,dpi,ratio, vp = document.getElementById('vp');
+	if(ua.indexOf('android') > -1) {
+		dw = window.screen.width;
+		dpi = window.devicePixelRatio;
+		if(dw >= 320*dpi) {
+			dw = dw/dpi;
+		}
+		ratio = dw/WIDTH;
+		if(parseFloat(ua.slice(ua.indexOf("android")+8))>4){
+			vp.setAttribute('content','width='+WIDTH+',initial-scale='+ratio+', maximum-scale='+ratio+',minimum-scale='+ratio+',user-scalable=no');
+		}
+	} else if(/(iphone|ipad|ipod|ios)/i.test(ua)){
+		vp.setAttribute('content','width='+WIDTH+',user-scalable=no');
+	}
+}, false );
+</script>
+</script>
+</body>
+</html>

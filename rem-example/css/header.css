@@ -1,0 +1,43 @@
+
+/*flex layout*/
+.box{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-box;
+	display:box;
+}
+.box-align{
+	-webkit-box-align:center;
+	-moz-box-align:center;
+	-ms-box-align:center;
+	box-align:center;
+}
+ .start{
+	-webkit-box-pack:start;
+	-moz-box-pack:start;
+	-ms-box-pack:start;
+	box-pack:start;
+}
+.center{
+	-webkit-box-pack:center;
+	-moz-box-pack:center;
+	-ms-box-pack:center;
+	box-pack:center;
+}
+.end{
+	-webkit-box-pack:end;
+	-moz-box-pack:end;
+	-ms-box-pack:end;
+	box-pack:end;
+}
+body{font-size:.32rem;color:#333;}
+/*header*/
+header{position:fixed;top:0;padding:0 0.2rem; width:7.5rem; height:0.9rem;background:#529ff2;z-index:10}
+header .tab{width:3.33rem; height:.6rem;border:1px solid #fff;border-radius:0.3rem;}
+header .tab a{display:block;width:1.665rem;line-height:.6rem;font-size:.32rem;color:#fff;text-align:center;}
+header .tab a.cur{background:#fff;color:#529ff2; border-radius:0.3rem;}
+header .me{position:absolute; top:.28rem;right:.3rem; display:block; width:.36rem;height:.36rem; background:url(../img/quanzi.png) no-repeat;background-size:100%;}
+header .me span{position:absolute; top: -0.12rem; left:0.23rem;display:block;width:.32rem;height:.32rem;background:#fd745d;border-radius:.16rem;line-height:.32rem;text-align:center;font-size:.24rem;font-weight:normal;}
+nav {position:fixed;z-index:10;left:0;margin-top:0.9rem;background:#fff;height:0.9rem;width:7.5rem;}
+nav a{display:block;text-align:center; line-height:.90rem;width:2.5rem;font-size:.32rem;color:#333;}
+nav a.cur{color:#529ff2;border-bottom: 0.06rem solid #529ff2;}

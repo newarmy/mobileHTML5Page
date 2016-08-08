@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+   <title>私信</title>
+  <meta charset="UTF-8">
+  <meta id="vp" name="viewport" content="target-densitydpi=device-dpi,width=640">
+  <meta name="apple-touch-fullscreen" content="YES" />
+  <meta name="HandheldFriendly" content="true">
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+ <meta name="format-detection" content="telephone=no">
+ <script>
+
+ </script>
+ <link href="css/index.css" rel="stylesheet"/>		
+
+<style>
+	.fixfixed #dd {
+		position: absolute;
+	}
+</style> 
+</head>
+<body class="leter">
+ <header>
+	<a href="#" class="goback"></a>
+	青蛙小姐么么哒
+ </header>
+ <ul>
+	<li class="friend">
+		<div class="box center time">
+			<span>10-21</span>
+		</div>
+		<div class="box start">
+		    <div class="img">
+				<img src="img/f.png" width="70" height="70"/>
+			</div>
+			<p class="talk">
+				我的意见我的意见我的意见我的意见我的意见我的意见我的意见
+			</p>
+		</div>
+	</li>
+    <li class="box end me">
+			<p class="talk">
+				我的意见我的意见我的意见我的意见我的意见
+			</p>
+			<div class="img">
+				<img src="img/m.png" width="70" height="70"/>
+			</div>
+	</li>
+	<li class="friend">
+		<div class="box center time">
+			<span>10-21</span>
+		</div>
+		<div class="box start">
+		    <div class="img">
+				<img src="img/f.png" width="70" height="70"/>
+			</div>
+			<p class="talk">
+				我的意见我的意见我的意见我的意见我的意见我的意见我的意见
+			</p>
+		</div>
+	</li>
+    <li class="box end me">
+			<p class="talk">
+				我的意见我的意见我的意见我的意见我的意见
+			</p>
+			<div class="img">
+				<img src="img/m.png" width="70" height="70"/>
+			</div>
+	</li>
+	<li class="box end me">
+			<p class="talk">
+				我的意见
+			</p>
+			<div class="img">
+				<img src="img/m.png" width="70" height="70"/>
+			</div>
+	</li>
+	<li class="box end me">
+			<p class="talk">
+				我的意见我的意见我的意见我的意见我的意见
+			</p>
+			<div class="img">
+				<img src="img/m.png" width="70" height="70"/>
+			</div>
+	</li>
+	<li class="box end me">
+			<p class="talk">
+				我的意见
+			</p>
+			<div class="img">
+				<img src="img/m.png" width="70" height="70"/>
+			</div>
+	</li>
+</ul>
+<footer id="dd" class="box start">
+	<input type="text" id="talkInput" placeHolder="我要说两句...">
+	<a href="#" id="sendbtn">发送</a>
+</footer>
+<script>
+/*动态修改不同系统，不同版本下viewport的设置，使页面在手机端正常显示*/
+var WIDTH = 640;
+document.addEventListener( "DOMContentLoaded", function() {
+	var ua = window.navigator.userAgent.toLowerCase(),dw,dpi,ratio, vp = document.getElementById('vp');
+	if(ua.indexOf('android') > -1) {
+		dw = window.screen.width;
+		dpi = window.devicePixelRatio;
+		if(dw >= 320*dpi) {
+			dw = dw/dpi;
+		}
+		ratio = dw/WIDTH;
+		if(parseFloat(ua.slice(ua.indexOf("android")+8))>4){
+			vp.setAttribute('content','width='+WIDTH+',initial-scale='+ratio+', maximum-scale='+ratio+',minimum-scale='+ratio+',user-scalable=no');
+		}
+	} else if(/(iphone|ipad|ipod|ios)/i.test(ua)){
+		vp.setAttribute('content','width='+WIDTH+',user-scalable=no');
+	}
+}, false );
+</script>
+</body>
+</html>
